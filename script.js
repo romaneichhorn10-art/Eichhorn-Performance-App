@@ -1,22 +1,21 @@
 /* ===== APP START FEELING ===== */
 
 window.addEventListener("load", () => {
-  // Body fade-in
-  document.body.classList.add("app-loaded");
-
-  // Splash handling
   const splash = document.getElementById("splash-screen");
 
-  if (splash) {
+  // Haupt-App verstecken bis Splash weg ist
+  document.body.style.overflow = "hidden";
+
+  setTimeout(() => {
+    splash.style.opacity = "0";
+    splash.style.transition = "0.4s ease";
+
     setTimeout(() => {
-      splash.classList.add("hide");
+      splash.remove();
+      document.body.style.overflow = "auto";
+    }, 400);
 
-      setTimeout(() => {
-        splash.remove();
-      }, 500);
-
-    }, 1000);
-  }
+  }, 900);
 });
 /* --------- VIEW HANDLING --------- */
 const views = {
