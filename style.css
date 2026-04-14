@@ -405,7 +405,7 @@ body.app-loaded {
 }
 
 #splash-screen img {
-  width: 260px;
+  width: 900px;
   height: auto;
   transform: scale(1);
   animation: splashZoom 0.8s ease;
