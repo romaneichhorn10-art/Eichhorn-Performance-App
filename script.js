@@ -1,3 +1,23 @@
+/* ===== APP START FEELING ===== */
+
+window.addEventListener("load", () => {
+  // Body fade-in
+  document.body.classList.add("app-loaded");
+
+  // Splash handling
+  const splash = document.getElementById("splash-screen");
+
+  if (splash) {
+    setTimeout(() => {
+      splash.classList.add("hide");
+
+      setTimeout(() => {
+        splash.remove();
+      }, 500);
+
+    }, 1000);
+  }
+});
 /* --------- VIEW HANDLING --------- */
 const views = {
   login: document.getElementById("login-view"),
