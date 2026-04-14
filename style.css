@@ -405,8 +405,21 @@ body.app-loaded {
 }
 
 #splash-screen img {
-  width: 180px;
+  width: 260px;
   height: auto;
+  transform: scale(1);
+  animation: splashZoom 0.8s ease;
+}
+
+@keyframes splashZoom {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 #splash-screen.hide {
