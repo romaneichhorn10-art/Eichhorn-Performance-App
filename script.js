@@ -1,7 +1,16 @@
 /* ===== APP START FEELING ===== */
 
 window.addEventListener("load", () => {
+  console.log("App loaded");
+
   const splash = document.getElementById("splash-screen");
+
+  if (splash) {
+    splash.remove();
+  }
+
+  document.body.classList.add("app-loaded");
+});
 
   // Haupt-App verstecken bis Splash weg ist
   document.body.style.overflow = "hidden";
