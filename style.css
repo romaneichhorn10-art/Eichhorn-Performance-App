@@ -405,15 +405,13 @@ body.app-loaded {
 }
 
 #splash-screen img {
-  width: 900px;
-  height: auto;
-  transform: scale(1);
+  width: 300px;
   animation: splashZoom 0.8s ease;
 }
 
 @keyframes splashZoom {
   0% {
-    transform: scale(0.85);
+    transform: scale(0.8);
     opacity: 0;
   }
   100% {
